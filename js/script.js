@@ -26,7 +26,8 @@ function appendImageToBody(srcURL) {
     $('#here').append('<img src=' + srcURL + '>');
 }
 function callGiphyAPIWithSearchTerm(searchTerm) {
-  var newUrl= "https://api.giphy.com/v1/stickers/search?q=" + searchTerm + "&api_key=dc6zaTOxFJmzC";
+//   var newUrl= "https://api.giphy.com/v1/stickers/search?q=" + searchTerm + "&api_key=dc6zaTOxFJmzC";
+  var newUrl = "https://api.giphy.com/v1/gifs/search?api_key=S4dqaAb3qd076bB4Rwkf98wzGL4qpB1k&q="+searchTerm+"&limit=10&offset=0&rating=g&lang=en"
     $.ajax({
       url: newUrl,
       method: "GET",
